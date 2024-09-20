@@ -51,13 +51,32 @@ where the parameters **\$\{length\}** and **\$\{thread_num\}** represent the len
 bash ./run_eff_mkl.bash -length=2 -thread_num=64 -mkl_root=/home/chunxu/intel/oneapi/mkl/latest
 ```
 
-Parameters are explained in the table below:
-* **-length:**  the number of matrices in a SMCM. ($length \in [2, 7]$)
-* **-thread_num:** the number of thread.
-* **-mkl_root:** the path to your installed MKL.
+Input parameters are explained in the table below:
+| Parameter | Description |
+| --- | --- |
+| **-length:** | the number of matrices in a SMCM. ($length \in [2, 7]$).|
+| **-thread_num:** | the number of thread.|
+| **-mkl_root:** | the path to your installed MKL.|
 
-All output results are written in the **./materials/output/fig** folder.
+All output figures are drawn in the **./materials/output/fig** folder.
 
+All statistics are written in the **./materials/output/** folder
+In the **./materials/output/efficient** folder, all the statistics are from the code in **accuracy**, the 5 columns of the file in this folder are explained in the table below:
+| Column | Description |
+| --- | --- |
+| **1-st** | Meta-path.|
+| **2-nd** | Number of non-zero elements in the result matrix.|
+| **3-rd** | Time cost of the algorithm.|
+| **4-th** | Time cost of the dynamic process in the algorithm.|
+| **5-th** | Time cost of the estimation in the algorithm.|
+Note that in the file, whose name invloves **mkl**, it only contains the first 3 columns.
+In the **./materials/output/efficient** folder, all the statistics is from the code in **efficient**
+
+In the **./materials/output/accuracy** folder, all the statistics are from the code in **accuracy**, the 2 columns of the file in this folder are explained in the table below:
+| Column | Description |
+| --- | --- |
+| **1-st** | Meta-path.|
+| **2-nd** | Number of **estiamted** non-zero elements in the result matrix.|
 
 
 ## The code of Estimator Accuracy Evaluation
