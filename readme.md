@@ -123,5 +123,5 @@ In the **./materials/output/accuracy** folder, all the statistics are from the c
         IMDB: https://www.imdb.com/interfaces/
 
 * We uploaded the DBLP, IMDB, and FreeBase datasets to Google Drive:  https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link.
-* There are some slight differences from the experiment shown in the paper. The meta-path here are all possible meta-paths, so the figure will be slightly different from that shown in the paper.
+* There are some slight differences from the experiment shown in the paper. The meta-paths here are all possible meta-paths, so the figure will be slightly different from that shown in the paper.
 
