@@ -19,7 +19,10 @@ Lin, C., Luo, W., Fang, Y., Ma, C., Liu, X., & Ma, Y. (2024). On Efficient Large
 
 ## Execution
 All output figures are drawn in the **./materials/output/fig** folder. 
-Recommended execution order of scripts in **./script**: 
+
+You need to download datasets form Google drive (https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link) and put **edge.txt, vertex.txt, and graph.txt** in the coresponding folder in **./materials/input/graph**.
+
+The recommended execution order of scripts in **./script**: 
 + **run_all.sh**
 + **draw_all.sh**
 + **run_eff_mkl.sh**
@@ -35,7 +38,7 @@ If you want to get the efficiency of each sparse matrix chain multiplication (SM
 ```
 bash ./run_all.sh
 ```
-After finishing **run_all.sh**, you can run **draw_all.sh** to draw **Figures 8-12**, and **Figure 14** in **./output/fig** directly.
+After finishing **run_all.sh**, you can run **draw_all.sh** to draw **Figures 8-12**, and **Figure 14** with DBLP, IMDB, and FreeBase datasets in **./output/fig** directly.
 ```
 bash ./draw_all.sh
 ```
@@ -119,6 +122,6 @@ In the **./materials/output/accuracy** folder, all the statistics are from the c
         FreeBase: http://freebase-easy.cs.uni-freiburg.de/dump/
         IMDB: https://www.imdb.com/interfaces/
 
-* We provide DBLP, IMDB, and FreeBase datasets used for here.
+* We uploaded the DBLP, IMDB, and FreeBase datasets to Google Drive:  https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link.
 * There are some slight differences from the experiment shown in the paper. The meta-path here are all possible meta-paths, so the figure will be slightly different from that shown in the paper.
 
