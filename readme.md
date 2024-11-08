@@ -12,7 +12,7 @@ Lin, C., Luo, W., Fang, Y., Ma, C., Liu, X., & Ma, Y. (2024). On Efficient Large
 
 * The version of mpirun (Open MPI) is 4.0.3. You can refer to https://www.open-mpi.org/software/ompi/v4.0/ to install OpenMP.
 
-* The version of Intel® oneAPI Math Kernel Library (MKL) is 2024.0, which can be obtain from https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-documentation.html. For installation steps, please see https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/overview.html.
+* The version of Intel® oneAPI Math Kernel Library (MKL) is 2024.0, which can be obtained from https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-documentation.html. For installation steps, please see https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/overview.html.
 
 * The version of python is 3.12.1 and matplotlib and numpy also need to be installed.
 
@@ -20,7 +20,7 @@ Lin, C., Luo, W., Fang, Y., Ma, C., Liu, X., & Ma, Y. (2024). On Efficient Large
 ## Execution
 All output figures are drawn in the **./materials/output/fig** folder. 
 
-You need to download datasets form Google drive (https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link) and put **edge.txt, vertex.txt, and graph.txt** in the coresponding folder in **./materials/input/graph**.
+You need to download datasets from Google drive (https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link) and put **edge.txt, vertex.txt, and graph.txt** in the corresponding folder in **./materials/input/graph**.
 
 The recommended execution order of scripts in **./script**: 
 + **run_all.sh**
@@ -44,7 +44,7 @@ bash ./draw_all.sh
 ```
 
  ### 3. Efficiency of MKL evaluation (run_eff_mkl.sh)
-You need to install MKL first, if you want to run the experiment in  **Figure 17**. Note that atfer installing Open MPI, you need to execute the following command:
+You need to install MKL first if you want to run the experiment in  **Figure 17**. Note that after installing Open MPI, you need to execute the following command:
 ```
 . ${KML_PATH}/env/vars.sh
 ```
@@ -94,7 +94,7 @@ In the **./materials/output/accuracy** folder, all the statistics are from the c
 
 
 ## The codes of Estimator Accuracy Evaluation
-* **\accuracy\res.cpp:** the row-wise sparisty estimator which is proposed by us. 
+* **\accuracy\res.cpp:** the row-wise sparsity estimator which is proposed by us. 
 * **\accuracy\meta.cpp:** a statistically unbiased matrix sparsity estimation algorithm, MetaAC, which is very efficient.
 * **\accuracy\mnc.cpp:** the state-of-the-art matrix sparsity estimation algorithm, MNC;
 * **\accuracy\dm.cpp:** a statistically unbiased sparsity estimator with block cells;
@@ -114,7 +114,7 @@ In the **./materials/output/accuracy** folder, all the statistics are from the c
 * **\efficient\lg.cpp:** same as RESMCM except for using LGraph estimator.
 
 ## Others
-* The five datasets used in paper are availabe from the following sources:
+* The five datasets used in the paper are available from the following sources:
 
         DBLP: http://dblp.uni-trier.de/xml/
         DBpedia: https://wiki.dbpedia.org/Datasets
