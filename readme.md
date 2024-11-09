@@ -14,13 +14,13 @@ Lin, C., Luo, W., Fang, Y., Ma, C., Liu, X., & Ma, Y. (2024). On Efficient Large
 
 * The version of Intel® oneAPI Math Kernel Library (MKL) is 2024.0, which can be obtained from https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-documentation.html. For installation steps, please see https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/overview.html.
 
-* The version of python is 3.12.1 and matplotlib and numpy also need to be installed.
+* The version of Python is 3.12.1 and matplotlib and numpy also need to be installed.
 
 
 ## Execution
 All output figures are drawn in the **./materials/output/fig** folder. 
 
-You need to download datasets from Google drive (https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link) and put **edge.txt, vertex.txt, and graph.txt** in the corresponding folder in **./materials/input/graph**.
+You need to download datasets, DBLP, IMDB, and FourSquare, from Google Drive (https://drive.google.com/drive/folders/1ugn9PY20Xb_W-N9vr44ueZQl_gluyzsR?usp=drive_link) and put **edge.txt, vertex.txt, and graph.txt** in the corresponding folder in **./materials/input/graph** before executing scripts.
 
 The recommended execution order of scripts in **./script**: 
 + **run_all.sh**
@@ -83,7 +83,7 @@ In the **./materials/output/efficient** folder, all the statistics are from the 
 | **3-rd** | Time cost of the algorithm.|
 | **4-th** | Time cost of the dynamic process in the algorithm.|
 | **5-th** | Time cost of the estimation in the algorithm.|
-Note that in the file, whose name invloves **mkl**, it only contains the first 3 columns.
+Note that in the file, whose name involves **mkl**, it only contains the first 3 columns.
 In the **./materials/output/efficient** folder, all the statistics is from the code in **efficient**
 
 In the **./materials/output/accuracy** folder, all the statistics are from the code in **accuracy**, the 2 columns of the file in this folder are explained in the table below:
@@ -107,7 +107,7 @@ In the **./materials/output/accuracy** folder, all the statistics are from the c
 * **\efficient\mkl_csc.cpp:** same estimator RESMCM, but using the sparse matrix multiplication algorithms from MKL with the CSC data structure.
 * **\efficient\mkl_bsr.cpp:** same estimator RESMCM, but using the sparse matrix multiplication algorithms from MKL with the BSR data structure.
 * **\efficient\l2r.cpp:** same as RESMCM except for using the left-to-right chain order.
-* **\efficient\naive.cpp:** same as RESMCM except for regarding all the input matrices as dense matrices, and then using the classic dynamic programming to determine an optimal orde.
+* **\efficient\naive.cpp:** same as RESMCM except for regarding all the input matrices as dense matrices, and then using the classic dynamic programming to determine an optimal order.
 * **\efficient\meta.cpp:** same as RESMCM except for using MetaAC estimator.
 * **\efficient\mnc.cpp:** same as RESMCM except for using MNC estimator.
 * **\efficient\dm.cpp:** same as RESMCM except for using DMap estimator.
